@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Bu skript requests paketi vasitəsilə statusu yoxlayır
-və cavabı formatlaşdırılmış şəkildə göstərir.
+Fetches https://intranet.hbtn.io/status using requests package.
 """
 import requests
 
@@ -9,7 +8,6 @@ import requests
 if __name__ == "__main__":
     url = 'https://intranet.hbtn.io/status'
     r = requests.get(url)
-    
     print("Body response:")
-    print(f"\t- type: {type(r.text)}")
-    print(f"\t- content: {r.text}")
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))
