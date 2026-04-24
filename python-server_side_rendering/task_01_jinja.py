@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+# task_01_jinja.py faylının daxili
 from flask import Flask, render_template
 
 app = Flask(__name__)
